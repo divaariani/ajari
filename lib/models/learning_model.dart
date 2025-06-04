@@ -5,6 +5,7 @@ class LearningModel {
   final int? materialCount;
   final int? taskCount;
   final String? imageUrl;
+  final String? desc;
 
   LearningModel({
     this.subject,
@@ -13,5 +14,6 @@ class LearningModel {
     this.materialCount,
     this.taskCount,
     this.imageUrl,
+    this.desc,
   });
 }

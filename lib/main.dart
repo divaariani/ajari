@@ -1,4 +1,6 @@
+import 'package:ajari/models/learning_model.dart';
 import 'package:ajari/theme/app_colors.dart';
+import 'package:ajari/views/detail_view.dart';
 import 'package:ajari/views/home_view.dart';
 import 'package:ajari/views/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +39,13 @@ final GoRouter _router = GoRouter(
     GoRoute(
       path: '/home',
       builder: (context, state) => const HomeView(),
+    ),
+    GoRoute(
+      path: '/detail',
+      builder: (context, state) {
+        final learning = state.extra as LearningModel;
+        return DetailView(learning: learning);
+      },
     ),
   ],
 );
