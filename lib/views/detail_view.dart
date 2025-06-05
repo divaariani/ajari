@@ -391,7 +391,7 @@ class _DetailViewState extends State<DetailView> {
                         height: 8,
                       ),
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.2,
+                        height: MediaQuery.of(context).size.height * 0.5,
                         child: TreeView(
                           controller: _treeViewController,
                           allowParentSelect: false,
